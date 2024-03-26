@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo Triângulo</title>
+</head>
+<body>
+    <script src="calculoTriangulo.js">
+        
+let anguloA = parseFloat(prompt("Informe o ãngulo A: "));
+
+let anguloB = parseFloat(prompt("Informe o ãngulo B: "));
+
+let anguloC = parseFloat(prompt("Informe o ãngulo C: "));
+
+if (anguloA === anguloB && anguloA === anguloC) {
+    alert(`O triãngulo é equilátero`)
+} else if (anguloA === anguloB || anguloA === anguloC || anguloB === anguloC) {
+    alert(`O triãngulo é isósceles`)
+} else {
+    alert(`O triãngulo é escaleno`)
+}
+    </script>
+</body>
+</html>

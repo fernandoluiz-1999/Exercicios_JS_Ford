@@ -12,3 +12,13 @@
 
 //saida
 // = informar o resultado do jogo de futebol
+
+const placar = '3x2';
+const [golsTime1, golsTime2] = placar.split('x');
+
+console.log(`COR - ${golsTime1} x ${golsTime2} - PAL`);
+
+// não tem a ver com o futebol, é só outro exemplo
+//const [nome, sobrenome] = 'João Roccella'.split(' ');
+
+//console.log(`Nome: ${nome} - Sobrenome: ${sobrenome}`);

@@ -8,7 +8,7 @@
 
 //entrada de dados
 // = determinar se o cliente é 1- cliente, 2- funcionário e 3-vip
-// = informar o total da compra 
+// = informar o total da compra
 
 //processamento de dados
 // = usar a estrutura switch case para determinar se é cliente, funcionário ou vip

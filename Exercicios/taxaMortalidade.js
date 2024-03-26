@@ -18,3 +18,64 @@
 
 //saída de dados
 // imprimir na tela a taxa de mortalidade ou natalidade
+
+function calculoNatalidadeMortalidade() {
+
+    let numeroHabitantes;
+
+    do {
+        numeroHabitantes = Number(window.prompt('Digite o número de habitantes:'));
+        if (isNaN(numeroHabitantes)) {
+            window.alert('Você precisa digitar um NÚMERO')
+        }
+
+    } while(isNaN(numeroHabitantes));
+
+    let opcao;
+
+    do {
+    opcao = window.prompt(`
+    Digite a opção desejada:
+    [N] Taxa de Natalidade
+    [M] Taxa de Mortalidade
+    `).toUpperCase();
+
+    if (opcao !== 'N' && opcao !== 'M') {
+        window.alert('Erro: digite uma opção válida!');
+    }
+    
+    } while (opcao !== 'N' && opcao !== 'M'); 
+    
+    
+    switch (opcao) {
+        case 'N':
+            let numeroNascimentos;
+            
+            do {
+                numeroNascimentos = Number(window.prompt(`Digite o número de nascimentos:`));
+
+             if (isNaN(numeroNascimentos)) {
+                window.alert('Digite um número válido de nascimentos!')
+            } else {
+                break;
+            }
+        } while (true);
+
+            window.alert(`A taxa de natalidade é ${numeroNascimentos * 1000 / numeroHabitantes}`);
+            break;
+        case 'M':
+            const numeroObitos = Number(window.prompt('Digite o número de óbitos:'))
+            window.alert(`A taxa de mortalidade é ${numeroObitos * 1000 / numeroHabitantes}`);
+            break;
+        default:
+            window.alert('A opção escolhida é inválida. Execute o programa novamente.');
+    }
+}
+    
+    
+    
+
+numeroNascimentos
+numeroObitos
+numeroHabitantes
+
